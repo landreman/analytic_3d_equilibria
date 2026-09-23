@@ -1,0 +1,47 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"iota",StyleBox[RowBox[{" ","="," "}]],"2"," ","solutions"}],
+"Section",ExpressionUUID -> "b61f5ebe-9712-4785-aa85-1a3085d2a4f2"],Cell[
+BoxData[
+{RowBox[{RowBox[{"a","=",RowBox[{"Sqrt","[",RowBox[{"1","+","\[Epsilon]"}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"b","=",RowBox[{"Sqrt","[",RowBox[{"1","-","\[Epsilon]"}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"s","=",RowBox[{RowBox[{RowBox[{"(",RowBox[{"x","/","a"}],")"}],"^","2"}],"+",RowBox[
+{RowBox[{"(",RowBox[{"y","/","b"}],")"}],"^","2"}]}]}],";"}],"\n",RowBox[{RowBox[
+{"F","=",RowBox[{"Sqrt","[",RowBox[{RowBox[{"2","s"}],"-",RowBox[{"s","^","2"}],"-",RowBox[
+{"4",RowBox[{"z","^","2"}]}]}],"]"}]}],";"}],"\n",RowBox[{RowBox[{"Bx","=",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"2","z"," ","x"}],"-",RowBox[{RowBox[{"(",RowBox[{"a","/","b"}],")"}],"F"," ","y"}]}],")"}],"/","s"}]}],";"}],"\n",RowBox[
+{RowBox[{"By","=",RowBox[{RowBox[{"(",RowBox[{RowBox[{"2","z"," ","y"}],"+",RowBox[
+{RowBox[{"(",RowBox[{"b","/","a"}],")"}],"F"," ","x"}]}],")"}],"/","s"}]}],";"}],"\n",RowBox[
+{RowBox[{"Bz","=",RowBox[{"1","-","s"}]}],";"}],"\n",RowBox[{RowBox[{"B","=",RowBox[
+{"{",RowBox[{"Bx",",","By",",","Bz"}],"}"}]}],";"}],"\n",RowBox[{RowBox[{"modB2","=",RowBox[
+{RowBox[{"Bx","^","2"}],"+",RowBox[{"By","^","2"}],"+",RowBox[{"Bz","^","2"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"\[Psi]","=",RowBox[{RowBox[{"(",RowBox[{RowBox[{"x","^","2"}],"+",RowBox[
+{"y","^","2"}],"+",RowBox[{"4",RowBox[{"z","^","2"}]}],"+","modB2","-","2","-",RowBox[
+{"\[Epsilon]","^","2"}]}],")"}],"/","4"}]}],";"}],"\n",RowBox[{RowBox[{"p","=",RowBox[
+{"pa","-",RowBox[{"2","\[Psi]"}]}]}],";"}],"\n",RowBox[{RowBox[{"J","=",RowBox[{"Curl","[",RowBox[
+{"B",",",RowBox[{"{",RowBox[{"x",",","y",",","z"}],"}"}]}],"]"}]}],";"}]}],"Input",
+CellLabel -> "In[46]:= ",ExpressionUUID -> "78f457a9-7076-4fc8-b777-07a9f59458f3"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Simplify","[","Div","[","B",",{","x",",","y",",","z","}]]"}],"Input",
+CellLabel -> "In[32]:= ",ExpressionUUID -> "c94bd922-35c0-408c-ae25-2185265a5ad0"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellLabel -> "Out[32]= ",ExpressionUUID -> "c47d5392-0a11-4ea1-973d-3f234596db91"]},
+Open],ExpressionUUID -> "c8c1cfc3-4876-4fcb-9f3d-807cb38b07dc"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Simplify","[","Dot","[","B",",","Grad","[\[Psi],{","x",",","y",",","z","}]]]"}],
+"Input",CellLabel -> "In[44]:= ",ExpressionUUID -> "32a380f8-7b2e-4a1e-ad16-3ac82ae3aa9f"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellLabel -> "Out[44]= ",ExpressionUUID -> "706d1977-7183-4ea4-ad25-24ed9efbd395"]},
+Open],ExpressionUUID -> "7f163366-87fe-4eae-ab11-62eb9ce9a3d9"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Simplify","[",RowBox[{RowBox[{"Cross","[",RowBox[{"J",",","B"}],"]"}],"-",RowBox[
+{"Grad","[",RowBox[{"p",",",RowBox[{"{",RowBox[{"x",",","y",",","z"}],"}"}]}],"]"}]}],"]"}]],
+"Input",CellLabel -> "In[59]:= ",ExpressionUUID -> "6909659e-23ef-4a7e-8d37-e9463f6ccbb0"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"0",",","0",",","0"}],"}"}],StandardForm],"Output",CellLabel -> "Out[59]= ",
+ExpressionUUID -> "0f6f972c-3a6a-47c7-8b6c-12ef6a8f6abd"]},Open],ExpressionUUID -> "95de7621-fd2c-45c8-b07d-21f2bcba8054"]},
+Open],ExpressionUUID -> "4af6b4a7-da3e-43cc-bce0-aafb4a554411"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "15. for Wolfram Cloud 1.77.1 (August 27, 2026)"]
