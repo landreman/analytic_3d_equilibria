@@ -18,12 +18,13 @@ families of solutions in the paper.
 
 Each directory contains:
 * The python script used to generate the figures in the paper.
-* A script that generates and DESC equilibrium, and checks that many quantities
+* A script that generates a DESC equilibrium, checking that many quantities
   match between the numerical equilibrium and the analytic expressions in the
   paper.
 * The corresponding DESC equilibrium file.
-* Notebooks that confirm ∇⋅B, B⋅∇ψ=0, and (∇×B)×B = ∇p.
-* Additional plotting scripts.
+* Notebooks that confirm ∇⋅B, B⋅∇ψ=0, and (∇×B)×B = ∇p, using the explicit
+  formulas for B, ψ, and p.
+* Additional scripts for plotting the solutions.
 * The original prompt and chat with GPT-6 Astra Pro with which the solutions
   were discovered.
 
