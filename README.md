@@ -21,8 +21,8 @@ Each directory contains:
 * A script that generates a DESC equilibrium, checking that many quantities
   match between the numerical equilibrium and the analytic expressions in the
   paper.
-* The corresponding DESC equilibrium file.
-* Notebooks that confirm ∇⋅B, B⋅∇ψ=0, and (∇×B)×B = ∇p, using the explicit
+* The corresponding DESC equilibrium file (HDF5 format, `*.h5`).
+* Notebooks that confirm ∇⋅B = 0, B⋅∇ψ = 0, and (∇×B)×B = ∇p, using the explicit
   formulas for B, ψ, and p.
 * Additional scripts for plotting the solutions.
 * The original prompt and chat with GPT-6 Astra Pro with which the solutions
